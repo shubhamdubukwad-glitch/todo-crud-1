@@ -69,8 +69,8 @@ function oncreatetodo(eve) {
             todoForm.reset()
 
             Swal.fire({
-                title: "Creae Successfully..!!!",
-                text: "todo data has been successfully..!!",
+                title: "Create Successfully..!!!",
+                text: "todo data created has been successfully..!!",
                 icon: "success",
                 timer: 4000
             });
@@ -122,6 +122,13 @@ function onupdatetodo() {
                                     <i onclick="eidttodo(this)" class="fa-regular fa-pen-to-square fa-2x text-primary"></i>
                                     <i onclick="deletetodo(this)" class="fa-solid fa-trash fa-2x text-danger"></i>
                                 </div>`;
+
+                 Swal.fire({
+                title: "updated Successfully..!!!",
+                text: "todo data updated has been successfully..!!",
+                icon: "success",
+                timer: 4000
+            });
             todoForm.reset()
             addtodoBtn.classList.remove('d-none');
             updatetodoBtn.classList.add('d-none')
