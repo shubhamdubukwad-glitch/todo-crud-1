@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>firebase todo crud-1</title>
+</head>
+
+<body>
+    <h2 class="bg-primary text-black text-center">FireBase Todo Crud Crud-1</h2>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="bg-primary text-black text-center">Todo Input..!!</h4>
+                        <form id="todoForm">
+                            <div class="form-group">
+                                <label for="inputControl">TODO-INPUT</label>
+                                <input type="text" class="form-control" id="inputControl">
+                            </div>
+                            <button id="addtodoBtn" class="btn btn-outline-primary btn-block">Add Todo</button>
+                            <button id="updatetodoBtn" type="button"
+                                class="btn btn-outline-success btn-block d-none">Update Todo</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="bg-primary text-black text-center">todo list..!!</h3>
+                        <ul class="list-group" id="todocontainer">
+                            <!-- <li class="list-group-item d-flex justify-content-between">
+                                <strong>html</strong>
+                                <div>
+                                    <i class="fa-regular fa-pen-to-square fa-2x text-primary"></i>
+                                    <i class="fa-solid fa-trash fa-2x text-danger"></i>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
