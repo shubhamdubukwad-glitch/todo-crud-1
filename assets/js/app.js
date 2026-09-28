@@ -20,7 +20,7 @@ xhr.onload = function () {
         let res = JSON.parse(xhr.response)
         for (const key in res) {
             res[key].id = key;
-            todoArr.push(res[key])
+            todoArr.unshift(res[key])
             readtodo(todoArr)
         }
     } else {
@@ -56,7 +56,7 @@ function oncreatetodo(eve) {
         if (xhr.status >= 200 && xhr.status <= 299) {
             let res = JSON.parse(xhr.response)
             let li = document.createElement('li');
-            li.id = res.id;
+            li.id = res.name;
             li.className = `list-group-item d-flex justify-content-between`;
             li.innerHTML = `
                                 <strong>${todoObj.todoinput}</strong>
